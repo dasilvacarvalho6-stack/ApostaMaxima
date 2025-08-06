@@ -1,32 +1,40 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
 }
 
-.container {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    background: #222;
-    border-radius: 10px;
+h1 {
+  color: red;
 }
 
-input, textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+section {
+  margin-bottom: 30px;
+  border: 1px solid #444;
+  padding: 10px;
+  background: #222;
+}
+
+.jogo {
+  margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 15px;
-    margin: 10px 5px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background: black;
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
 }
+
+#resumo-apostas {
+  margin-top: 30px;
+  background: #222;
+  padding: 15px;
+  border: 1px solid #555;
+}
+
+
