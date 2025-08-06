@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aposta Máxima</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>ApostaMáxima - Grade de Jogos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Aposta Máxima</h1>
-        <form id="apostaForm">
-            <label>Usuário:</label>
-            <input type="text" id="usuario" required>
+  <h1>ApostaMáxima</h1>
+  <div id="jogos-container"></div>
 
-            <label>Valor da aposta (R$):</label>
-            <input type="number" id="valor" required>
+  <div id="resumo-apostas">
+    <h2>Resumo das Apostas</h2>
+    <ul id="lista-apostas"></ul>
+    <label>Valor da aposta: R$ <input type="number" id="valor-aposta" /></label><br/>
+    <p>Odds totais: <span id="total-odds">0</span></p>
+    <p>Possível retorno: R$ <span id="retorno">0</span></p>
+    <button onclick="irParaPagamento()">Finalizar Aposta</button>
+  </div>
 
-            <label>Jogos (um por linha):</label>
-            <textarea id="jogos" required></textarea>
-
-            <div class="botoes">
-                <button type="submit">Apostar com PIX (saldo)</button>
-                <button type="button" onclick="gerarCodigo()">Gerar código (dinheiro em espécie)</button>
-            </div>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
