@@ -1,26 +1,16 @@
-﻿function gerarCodigo() {
-    const usuario = document.getElementById('usuario').value.trim();
-    const valor = document.getElementById('valor').value.trim();
-    const jogos = document.getElementById('jogos').value.trim().split('\n').join(' + ');
+document.getElementById('apostaForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const usuario = document.getElementById('usuario').value;
+    const valor = document.getElementById('valor').value;
+    const jogos = document.getElementById('jogos').value;
 
-    if (!usuario || !valor || !jogos) {
-        document.getElementById('resultado').innerText = "Preencha todos os campos para gerar o código.";
-        return;
-    }
+    alert(`Aposta registrada!\nUsuário: ${usuario}\nValor: R$${valor}\nJogos:\n${jogos}`);
+});
 
-    const codigo = `${usuario}|R$${valor}|${jogos}`;
-    document.getElementById('resultado').innerText = `Código gerado:\n${codigo}\n\nEnvie este código para o administrador.`;
+function gerarCodigo() {
+    const codigo = Math.floor(100000 + Math.random() * 900000);
+    alert(`Código gerado: ${codigo}\nEntregue esse código ao entregador.`);
 }
 
-function apostarPix() {
-    const usuario = document.getElementById('usuario').value.trim();
-    const valor = document.getElementById('valor').value.trim();
-    const jogos = document.getElementById('jogos').value.trim().split('\n').join(' + ');
-
-    if (!usuario || !valor || !jogos) {
-        document.getElementById('resultado').innerText = "Preencha todos os campos para apostar com Pix.";
-        return;
-    }
-
-    document.getElementById('resultado').innerText = `Aposta confirmada com PIX!\nUsuário: ${usuario}\nValor: R$${valor}\nJogos: ${jogos}`;
 }
+
