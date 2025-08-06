@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pagamento - ApostaMáxima</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Pagamento</h1>
+
+  <div id="resumo-pagamento">
+    <p><strong>Total a pagar:</strong> R$ <span id="valor-final"></span></p>
+    <p><strong>Odds totais:</strong> <span id="odds-finais"></span></p>
+  </div>
+
+  <h2>Escolha a forma de pagamento:</h2>
+
+  <button onclick="pagarPix()">Pagar com Pix</button>
+  <button onclick="gerarCodigoDinheiro()">Gerar Código (Dinheiro Express)</button>
+
+  <div id="resultado-pagamento"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const valor = params.get("valor");
+    const odds = params.get("odds");
+
+    document.getElementById("valor-final").textContent = valor;
+    document.getElementById("odds-finais").textContent = odds;
+
+    function pagarPix() {
+      const chavePix = "chavepix@exemplo.com";
+      document.getElementById("resultado-pagamento").innerHTML = `
+        <p>Envie R$ ${valor} para a chave Pix:</p>
+        <p><strong>${chavePix}</strong></p>
+      `;
+    }
+
+    function gerarCodigoDinheiro() {
+      const codigo = Math.floor(Math.random() * 1000000);
+      document.getElementById("resultado-pagamento").innerHTML = `
+        <p>Código gerado: <strong>${codigo}</strong></p>
+        <p>Leve este código até um ponto físico para pagar em dinheiro.</p>
+      `;
+    }
+  </script>
+</body>
+</html>
