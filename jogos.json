@@ -1,0 +1,102 @@
+﻿[
+  {
+    "data": "2025-08-11",
+    "dia": "Monday",
+    "hora": "18:00",
+    "time1": "Flamengo",
+    "time2": "Palmeiras",
+    "odd1": 2.1,
+    "oddX": 3.2,
+    "odd2": 2.9
+  },
+  {
+    "data": "2025-08-11",
+    "dia": "Monday",
+    "hora": "20:30",
+    "time1": "Cruzeiro",
+    "time2": "Grêmio",
+    "odd1": 2.3,
+    "oddX": 3.0,
+    "odd2": 3.1
+  },
+  {
+    "data": "2025-08-12",
+    "dia": "Tuesday",
+    "hora": "19:00",
+    "time1": "Chelsea",
+    "time2": "Arsenal",
+    "odd1": 2.5,
+    "oddX": 3.3,
+    "odd2": 2.7
+  },
+  {
+    "data": "2025-08-12",
+    "dia": "Tuesday",
+    "hora": "21:00",
+    "time1": "Real Madrid",
+    "time2": "Barcelona",
+    "odd1": 2.4,
+    "oddX": 3.5,
+    "odd2": 2.5
+  },
+  {
+    "data": "2025-08-13",
+    "dia": "Wednesday",
+    "hora": "17:00",
+    "time1": "Santos",
+    "time2": "Corinthians",
+    "odd1": 2.0,
+    "oddX": 3.1,
+    "odd2": 3.0
+  },
+  {
+    "data": "2025-08-14",
+    "dia": "Thursday",
+    "hora": "20:00",
+    "time1": "Liverpool",
+    "time2": "Man City",
+    "odd1": 2.6,
+    "oddX": 3.0,
+    "odd2": 2.4
+  },
+  {
+    "data": "2025-08-15",
+    "dia": "Friday",
+    "hora": "18:30",
+    "time1": "Botafogo",
+    "time2": "Vasco",
+    "odd1": 2.7,
+    "oddX": 3.2,
+    "odd2": 2.9
+  },
+  {
+    "data": "2025-08-16",
+    "dia": "Saturday",
+    "hora": "16:00",
+    "time1": "Bayern",
+    "time2": "Dortmund",
+    "odd1": 2.1,
+    "oddX": 3.0,
+    "odd2": 2.6
+  },
+  {
+    "data": "2025-08-16",
+    "dia": "Saturday",
+    "hora": "22:00",
+    "time1": "São Paulo",
+    "time2": "Internacional",
+    "odd1": 2.8,
+    "oddX": 3.1,
+    "odd2": 2.8
+  },
+  {
+    "data": "2025-08-17",
+    "dia": "Sunday",
+    "hora": "15:00",
+    "time1": "PSG",
+    "time2": "Lyon",
+    "odd1": 1.9,
+    "oddX": 3.4,
+    "odd2": 3.6
+  }
+]
